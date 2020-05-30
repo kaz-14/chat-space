@@ -9,16 +9,16 @@
 |name|string|null: false|
 ### Association
 - has_many :messages
-- belongs_to :group
-- has_many  :groups,  through:  :users_groups
+- has_many :users_groups
+- has_many :groups, through: :users_groups
 
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name||
+|name|string|null: false|
 ### Association
-- belongs_to :user
-- has_many  :users,  through:  :users_groups
+- has_many :users_groups
+- has_many :users, through: :users_groups
 
 ## users_groupsテーブル
 |Column|Type|Options|
@@ -35,9 +35,9 @@
 |image|text||
 |text|text||
 |user_id|integer|null: false, foreign_key: true|
-|users_groups_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 ### Association
-- belongs_to :users_groups
+- belongs_to :groups
 - belongs_to :user
 
 
