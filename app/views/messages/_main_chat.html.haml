@@ -1,1 +1,25 @@
-<チャット画面>
+.Chat-main
+  .Chat-main__group-info
+    .group-name
+      .group-name__index
+        %div.group-name__index--text test
+        %ul.group-name__index--memmber Member : masa
+    .group-name__edit
+      = link_to "Edit", "#", class: "group-name__edit--btn"
+  .Chat-main__message-list
+    .message-field
+      %div.message-field__user-name masa
+      %div.message-field__date 2019/11/20(wed)17.43.01
+    %div.message-box おはよう！
+    .message-field
+      %div.message-field__user-name masa
+      %div.message-field__date 2019/11/20(wed)17.43.01
+    %div.message-box おはよう！
+  .Chat-main__message-form
+    .form-contents
+      .form-contents__box
+        %input.form-contents__box--text{"placeholder": "type a message", "type": "text"}
+        %label{class: "form-contents__box--image"}
+          = icon('fas', 'image',)
+          %input{type: "file", class: "form-contents__box--file"}
+      %input.form-contents__btn{"name":"commit", "type":"submit", "value":"Send"}
