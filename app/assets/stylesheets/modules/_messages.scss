@@ -15,6 +15,7 @@
     align-items: center;
   }
   &__group-list{
+    width: 300px;
     background-color: #2f3e51;
     height: calc(100vh - 100px);
     overflow: scroll;
@@ -52,6 +53,8 @@
 }
 
 .group-items{
+  width: 300px;
+  background-color: #2f3e51;
   a {
     color: #ffffff;
     text-decoration: none;
@@ -85,6 +88,7 @@
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
     overflow: scroll;
+    padding: 35px 0 0 40px;
   }
   &__message-form{
     height: 90px;
@@ -131,8 +135,6 @@
 
 
 .message-content{
-  margin-left: 40px;
-  padding-top: 35px;
   &__box{
     &__field{
       display: flex;
@@ -155,13 +157,17 @@
 .message-box{
   color: #434A54;
   font-size: 14px;
-  margin: 12px 0 46px 40px;
+  margin: 12px 0 46px 0;
 }
 
 .form-contents{
   margin-right: 15px;
-  display: flex;
+  // display: flex;
   width: 100%;
+  &__test{
+    width: 100%;
+    display: flex;
+  }
   &__box{
     display: flex;
     position: relative;
