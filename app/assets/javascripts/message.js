@@ -40,7 +40,7 @@ $(function(){
     };
   }
 
-  $('.form-contents__test').on('submit', function(e){
+  $('.form-contents__area').on('submit', function(e){
     e.preventDefault();
     let formData =new FormData(this);
     let url = $(this).attr('action');
@@ -57,7 +57,7 @@ $(function(){
       $('.Chat-main__message-list').append(html);
       $('.Chat-main__message-list').animate({ scrollTop: $('.Chat-main__message-list')[0].scrollHeight});
       $('.form-contents__btn').prop('disabled', false);
-      $('.form-contents__test')[0].reset();
+      $('.form-contents__area')[0].reset();
     })
     .fail(function() {
       alert("メッセージ送信に失敗しました");
