@@ -12,8 +12,7 @@
     .group-name__edit
       = link_to "Edit", edit_group_path(@group), class: "group-name__edit--btn"
   .Chat-main__message-list
-    .message-content
-      = render @messages
+    = render @messages
   .Chat-main__message-form
     .form-contents
       = form_with model: [@group, @message], html: {class: "form-contents__area"}, local: true do |f|
