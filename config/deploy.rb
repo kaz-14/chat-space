@@ -10,7 +10,7 @@ set :rbenv_type, :user
 set :rbenv_ruby, '2.6.5'
 
 set :ssh_options, auth_methods: ['publickey'],
-                  keys: ['~/.ssh/chatkzls_pem'] 
+                  keys: ['~/.ssh/chatkzls_keys'] 
 
 set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
 
