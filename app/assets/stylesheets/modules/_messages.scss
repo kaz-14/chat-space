@@ -19,6 +19,7 @@
     background-color: #2f3e51;
     height: calc(100vh - 100px);
     overflow: scroll;
+    padding: 0 20px;
   }
 }
 
@@ -55,21 +56,17 @@
 .group-items{
   width: 300px;
   background-color: #2f3e51;
+  padding: 20px 0 40px;
   a {
     color: #ffffff;
     text-decoration: none;
   }
   &__name{
     font-size: 15px;
-    padding-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
   }
   &__message{
     font-size: 11px;
     margin-top: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
   }
 }
 
@@ -93,7 +90,7 @@
   &__message-form{
     height: 90px;
     background-color: #d2d2d2;
-    padding: 20px 50px 20px 40px;
+    padding: 20px 40px 20px 40px;
   }
 }
 
